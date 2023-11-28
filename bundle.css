@@ -31,7 +31,8 @@ input, button, textarea, select {
   background-image: url(./images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100svh;
+  height: 100svh;
+  min-height: 380px;
   display: flex;
   flex-direction: column;
 }
