@@ -109,7 +109,7 @@ main.container {
   justify-content: space-between;
 }
 
-.navbar-full-sm {
+.navbar-opened-sm {
   padding-inline: 1.75rem;
   align-items: start;
   position: fixed;
