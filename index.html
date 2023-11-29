@@ -25,34 +25,36 @@
     <header class="heading">
       <div class="container">
         <nav id="navbar-collapsable" class="navbar">
-          <div class="navbar-controls">
-            <div class="navbar-brand">
-              <img src="./images/logo.svg" alt="Loopstudios" />
-            </div>
+          <div class="navbar-controls-container">
+            <div class="navbar-controls">
+              <div class="navbar-brand">
+                <img src="./images/logo.svg" alt="Loopstudios" />
+              </div>
 
-            <div
-              id="navbar-hamburguer"
-              class="navbar-button"
-              onclick="toggleNavbar()"
-            >
-              <img src="./images/icon-hamburger.svg" alt="" />
+              <div
+                id="navbar-hamburguer"
+                class="navbar-button"
+                onclick="toggleNavbar()"
+              >
+                <img src="./images/icon-hamburger.svg" alt="" />
+              </div>
+              <div
+                id="navbar-close"
+                class="navbar-button hidden-sm"
+                onclick="toggleNavbar()"
+              >
+                <img src="./images/icon-close.svg" alt="" />
+              </div>
             </div>
-            <div
-              id="navbar-close"
-              class="navbar-button hidden-sm"
-              onclick="toggleNavbar()"
-            >
-              <img src="./images/icon-close.svg" alt="" />
+            <div id="navbar-nav-collapsable" class="navbar-nav hidden-sm">
+              <ul>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Support</li>
+              </ul>
             </div>
-          </div>
-          <div id="navbar-nav-collapsable" class="navbar-nav hidden-sm">
-            <ul>
-              <li>About</li>
-              <li>Careers</li>
-              <li>Events</li>
-              <li>Products</li>
-              <li>Support</li>
-            </ul>
           </div>
         </nav>
 

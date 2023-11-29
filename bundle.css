@@ -33,6 +33,8 @@ input, button, textarea, select {
   background-size: cover;
   min-height: 100svh;
   padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 #title-deep-earth {
@@ -78,7 +80,7 @@ h1, h2 {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-block: 3rem;
+  margin-block: 3rem;
   color: white;
 }
 
@@ -102,7 +104,8 @@ h1, h2 {
 }
 
 .container {
-  padding-inline: 1.75rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .heading .container {
@@ -121,8 +124,7 @@ main.container {
 }
 
 .navbar-opened-sm {
-  padding-inline: 1.75rem;
-  align-items: start;
+  align-items: center;
   position: fixed;
   width: 100%;
   height: 100svh;
@@ -132,6 +134,10 @@ main.container {
   background-color: black;
   color: white;
   z-index: 1;
+}
+
+.navbar-opened-sm .navbar-controls-container {
+  width: 90%;
 }
 
 .navbar-brand {
@@ -145,7 +151,7 @@ main.container {
 .navbar-nav {
   position: relative;
   margin: auto 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 100%;
 }
 
@@ -163,6 +169,10 @@ main.container {
 .navbar-nav ul li:hover {
   text-decoration: underline;
   text-underline-offset: 0.5rem;
+}
+
+.navbar-controls-container {
+  width: 100%;
 }
 
 .hidden-sm {
@@ -444,7 +454,7 @@ h2 {
   }
 
   .footing .container {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-gap: 1.5rem;
     grid-template-rows: auto auto;
     grid-auto-flow: column;
@@ -495,5 +505,9 @@ h2 {
   .headline-text h2 {
     padding-block: clamp(0.75rem, 0.4rem + 1vw, 1.25rem);
     text-align: left;
+  }
+
+  .navbar-controls-container {
+    display: flex;
   }
 }
