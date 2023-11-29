@@ -22,39 +22,55 @@
     />
   </head>
   <body>
-    <header class="heading container">
-      <nav id="navbar-collapsable" class="navbar">
-        <div class="navbar-controls">
-          <div class="navbar-brand">
-            <img src="./images/logo.svg" alt="Loopstudios" />
-          </div>
+    <header class="heading">
+      <div class="container">
+        <nav id="navbar-collapsable" class="navbar">
+          <div class="navbar-controls-container">
+            <div class="navbar-controls">
+              <div class="navbar-brand">
+                <img src="./images/logo.svg" alt="Loopstudios" />
+              </div>
 
-          <div id="navbar-hamburguer" onclick="toggleNavbar()">
-            <img src="./images/icon-hamburger.svg" alt="" />
+              <div
+                id="navbar-hamburguer"
+                class="navbar-button"
+                onclick="toggleNavbar()"
+              >
+                <img src="./images/icon-hamburger.svg" alt="" />
+              </div>
+              <div
+                id="navbar-close"
+                class="navbar-button hidden-sm"
+                onclick="toggleNavbar()"
+              >
+                <img src="./images/icon-close.svg" alt="" />
+              </div>
+            </div>
+            <div id="navbar-nav-collapsable" class="navbar-nav hidden-sm">
+              <ul>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Support</li>
+              </ul>
+            </div>
           </div>
-          <div id="navbar-close" class="hidden-sm" onclick="toggleNavbar()">
-            <img src="./images/icon-close.svg" alt="" />
-          </div>
-        </div>
-        <div id="navbar-nav-collapsable" class="navbar-nav hidden-sm">
-          <ul>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Events</li>
-            <li>Products</li>
-            <li>Support</li>
-          </ul>
-        </div>
-      </nav>
+        </nav>
 
-      <div class="heading-text">
-        <h1>Immersive experiences that deliver</h1>
+        <div class="heading-text">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
       </div>
     </header>
 
     <main class="container">
       <section class="headline">
         <picture>
+          <source
+            media="min-width:768px"
+            srcset="./images/desktop/image-interactive.jpg"
+          />
           <img
             src="./images/mobile/image-interactive.jpg"
             alt="Interactive VR"
@@ -72,7 +88,12 @@
       </section>
 
       <section class="creations">
-        <h2>Our creations</h2>
+        <div class="creations-header">
+          <h2>Our creations</h2>
+          <button class="creation-seemore creation-seemore-lg" type="button">
+            See all
+          </button>
+        </div>
         <div class="creation-gallery">
           <div class="creation" id="title-deep-earth">
             <div class="creation-title">Deep earth</div>
@@ -99,39 +120,43 @@
             <div class="creation-title">Make it fisheye</div>
           </div>
         </div>
-        <button class="creation-seemore" type="button">See all</button>
+        <button class="creation-seemore creation-seemore-sm" type="button">
+          See all
+        </button>
       </section>
     </main>
 
     <footer class="footing">
-      <div class="footer-brand">
-        <img src="./images/logo.svg" alt="Loopstudios" />
-      </div>
-      <nav class="footer-navbar">
-        <ul>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
-        </ul>
-      </nav>
-      <div class="footer-socials">
-        <div class="footer-social">
-          <img src="./images/icon-facebook.svg" alt="facebook" />
+      <div class="container">
+        <div class="footer-brand">
+          <img src="./images/logo.svg" alt="Loopstudios" />
         </div>
-        <div class="footer-social">
-          <img src="./images/icon-twitter.svg" alt="twitter" />
+        <nav class="footer-navbar">
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+        <div class="footer-socials">
+          <div class="footer-social">
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+          </div>
+          <div class="footer-social">
+            <img src="./images/icon-twitter.svg" alt="twitter" />
+          </div>
+          <div class="footer-social">
+            <img src="./images/icon-pinterest.svg" alt="pinterest" />
+          </div>
+          <div class="footer-social">
+            <img src="./images/icon-instagram.svg" alt="instagram" />
+          </div>
         </div>
-        <div class="footer-social">
-          <img src="./images/icon-pinterest.svg" alt="pinterest" />
+        <div class="attribution">
+          &copy; 2023 Loopstudios. All rights reserved.
         </div>
-        <div class="footer-social">
-          <img src="./images/icon-instagram.svg" alt="instagram" />
-        </div>
-      </div>
-      <div class="attribution">
-        &copy; 2023 Loopstudios. All rights reserved.
       </div>
     </footer>
   </body>
