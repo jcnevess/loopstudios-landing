@@ -1,6 +1,4 @@
-# Frontend Mentor - Loopstudios landing page solution
-
-This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). 
+# Loopstudios landing page solution
 
 It is developed with HTML, CSS and Javascript and build with eleventy.
 
@@ -54,4 +52,3 @@ It was a good practice for positioning and Css Grid.
 ## Author
 
 - Website - [Júlio Neves](https://jcnevess.github.io/)
-- Frontend Mentor - [@jcnevess](https://www.frontendmentor.io/profile/jcnevess)
